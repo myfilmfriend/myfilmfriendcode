@@ -9,7 +9,6 @@ var express = require("express"),
 app.use(express.static("public"));
 
 /* You can use cron-job.org, uptimerobot.com, or a similar site to hit your /BOT_ENDPOINT to wake up your app and make your Twitter bot tweet. */
-
 app.all(`/${process.env.BOT_ENDPOINT}`, function(req, res) {
   console.log("received a request...");
 

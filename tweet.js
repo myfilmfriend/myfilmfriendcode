@@ -9,8 +9,8 @@ var helpers = require(__dirname + "/helpers.js"),
       access_token_secret: process.env.ACCESS_TOKEN_SECRET
     }
   },
-  Twit = require("twit"),
-  T = new Twit(config.twitter);
+    Twit = require("twit"),
+    T = new Twit(config.twitter);
 
 module.exports = {
   post_image: function(text, image_base64, cb) {

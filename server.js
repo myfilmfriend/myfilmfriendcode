@@ -28,9 +28,14 @@ app.all(`/${process.env.BOT_ENDPOINT}`, function(req, res) {
       helpers.load_image(url, function(err, img_data) {
         tweet.post_image(
           helpers.random_from_array([
-            "Todays reccomendation",
-            "We suggest",
-            "Film of the day"
+            'We suggest:',
+            'Film of the day:',
+            'Todays recommendation:',
+            'Film of the day:',
+            'Have you seen this?',
+            'Thoughts?',
+            'What would you rate this?',
+            'Check it out:'
           ]),
           img_data,
           function(err) {

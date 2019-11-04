@@ -35,7 +35,8 @@ app.all(`/${process.env.BOT_ENDPOINT}`, function(req, res) {
             'Have you seen this?',
             'Thoughts?',
             'What would you rate this?',
-            'Check it out:'
+            'Check it out:',
+            'How about this film?'
           ]),
           img_data,
           function(err) {
